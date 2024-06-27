@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lvt3sav.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="script.js" defer></script>
+  <title>CV</title>
+</head>
+<body>
+  <div class="container">
+    <div class="column left-column">
+      <img class="profile-photo" src="zdjecie do cv.jpg" alt="profile photo">
+      <h1 class="name">Wojciech Kowalski</h1>
+      <div class="basic-info"><i class="bi bi-briefcase-fill"></i>Designer</div>
+      <div class="basic-info"><i class="bi bi-house-fill"></i>Poznań</div>
+      <div class="basic-info"><i class="bi bi-envelope-at-fill"></i>kowalski.wojciech.444@gmail.com</div>
+      <div class="basic-info"><i class="bi bi-telephone-fill"></i>+48 663924504</div>
+      <div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+      <hr>
+      <div class="skills">
+        <h2><i class="bi bi-star-fill"></i>Skills</h2>
+
+        Adobe Photoshop
+        <div class="progress">
+          <div class="progress-fill" style="width: 80%">
+            80%
+          </div>
+        </div>
+
+        Fotografia
+        <div class="progress">
+          <div class="progress-fill" style="width: 85%">
+            85%
+          </div>
+        </div>
+
+        Video
+        <div class="progress">
+          <div class="progress-fill" style="width: 80%">
+            80%
+          </div>
+        </div>
+
+        Inżynieria dźwięku
+        <div class="progress">
+          <div class="progress-fill" style="width: 90%">
+            90%
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <h2><i class="bi bi-globe-americas"></i>Languages</h2>
+
+        English
+        <div class="progress">
+          <div class="progress-fill custom-height" style="width: 80%">80%</div>
+        </div>
+
+        French
+        <div class="progress">
+          <div class="progress-fill custom-height" style="width: 50%">50%</div>
+        </div>
+
+        Polski
+        <div class="progress">
+          <div class="progress-fill custom-height" style="width: 100%">100%</div>
+        </div>
+      </div>
+    </div>
+    <div class="column right-column">
+      <div class="section">
+        <h2><i class="bi bi-suitcase-lg-fill"></i>Doświadczenie Zawodowe</h2>
+        <h3>U Brata / uBrata.pl</h3>
+        <div class="employment-time"><i class="bi bi-calendar3"></i>Czerwiec 2004 - Marzec 2021</div>
+        <p> A Brat za robotą lata</p>
+        <hr>
+        <h3>Tu i ówdzie</h3>
+        <div class="employment-time"><i class="bi bi-calendar3"></i>Sierpień 2020 - </div>
+        <p></p>
+        <hr>
+        <h3>Projektant Graficzny / mckr.pl</h3>
+        <div class="employment-time"><i class="bi bi-calendar3"></i> Grudzień 2023 - </div>
+        <p>-Projektowanie okładek do książek. "Zawsze punktualny, dotrzymuje deadlinów i sprawia, że klientów jest coraz więcej swoją profesjonalną pracą" - Maciej Kowalski - Cyfrowy Rzemieślnik, Szef.
+        </p>
+      </div>
+      <div class="section">
+        <h2><i class="bi bi-backpack-fill"></i>Edukacja</h2>
+        <h3>Uniwersytet WSB Merito w Warszawie </h3>
+        <div class="employment-time"><i class="bi bi-calendar3"></i>Wrzesień 2023 - </div>
+        <p>Grafika Komputerowa </p>
+        <hr>
+        <h3>Szkoła Podstawowa Lansu i Bansu im. Dj Hazela w Wierzchołkach</h3>
+        <div class="employment-time"><i class="bi bi-calendar3"></i>Wrzesień 2010 - Czerwiec 2018</div>
+        <p>Ukończono z wyróżnieniem. 1 miejsce w konkursie na pióro wójta, rekord szkoły w skakaniu na czas (32h)
+        </p>
+        </div>
+      <div class="section">
+        <h2><i class="bi bi-bicycle"></i>Hobby</h2>
+        <ul>
+          <li>Moda</li>
+          <li>Piłka nożna</li>
+          <li>Hazard</li>
+          <li>Fotografia</li>
+          <li>Tinder</li>
+          <li>Muzyka</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2><i class="bi bi-card-image"></i>Portfolio</h2>
+        <table>
+          <tr>
+            <td>Photo 1</td>
+            <td>Photo 2</td>
+            <td>Photo 3</td>
+          </tr>
+          <tr>
+            <td><img src="1toksyczność.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+            <td><img src="biblioteka.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+            <td><img src="DSC07399.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+          </tr>
+          <tr>
+            <td>Photo 4</td>
+            <td>Photo 5</td>
+            <td>Photo 6</td>
+          </tr>
+          <tr>
+            <td><img src="okładka wysiedleni 1.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+            <td><img src="Wojciech Kowalski_Grafika Bitmapowa (Rastrowa)_plakat.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+            <td><img src="okladka doktor inanananana.jpg" class="portfolio-image" onclick="showImage(this.src)"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Wyrażam zgodę na przetwarzanie moich danych osobowych w zakresie przyszłych procesów rekrutacyjnych.</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    background-color: #1a1a1a;
+    font-family: "coolvetica", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0,25px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+
+hr {
+    width: 90%;
+    border-top: 1px solid #1b1b1b;
+}
+
+li::marker {
+    color: rgb(255, 130, 0);
+}
+
+table {
+    margin: 0 auto;
+}
+
+table img {
+    width: 250px;
+    height: 250px;
+    transition: .5s;
+}
+
+table img:hover {
+    scale: 1.1;
+}
+
+table td {
+    overflow: hidden;
+}
+
+.container {
+    width: 1400px;
+    margin: 16px auto;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-column {
+    background-color: #1b1b1b;
+    width: 30%;
+    position: sticky;
+    top: 16px;
+}
+
+.profile-photo {
+    width: 75%;
+    height: 315px;
+    box-shadow: 0px 5px 15px gray;
+    object-fit: cover;
+    object-position: top;
+}
+
+.name {
+    margin-left: 8px;
+    font-weight: 800;
+    font-size: 50px;
+}
+.section h3{
+    letter-spacing: 1px;
+}
+
+
+
+.basic-info {
+    margin: 10px 8px;
+}
+
+.basic-info i {
+    color: rgb(255, 130, 0);
+    margin-right: 8px;
+    
+}
+
+.skills {
+    margin: 8px;
+}
+
+.skills i,
+.section i {
+    margin-right: 8px;
+    color: rgb(255, 130, 0);
+}
+
+.progress {
+    background-color: #1b1b1b;;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.progress-fill {
+    background-color: rgb(255, 130, 0);
+    border-radius: 8px;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: small;
+}
+
+.custom-height {
+    height: 15px;
+}
+
+.right-column {
+    width: 65%;
+    margin-left: 16px;
+}
+
+.section {
+    background-color: #1b1b1b;
+    margin-bottom: 16px;
+    padding: 16px;
+    letter-spacing: 0,25px;
+}
+
+.employment-time {
+    color: rgb(255, 130, 0);
+}
+.portfolio-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.1);
+}
+
+
+.modal {
+  display: none;
+  position:fixed;
+  z-index: 9999;
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  max-height: 100%;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer {
+    background-color: rgb(255, 130, 0);;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
